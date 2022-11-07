@@ -2,20 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  @font-face {
-    font-family: "Inter";
-    font-weight: 400;
-    src: url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto&display=swap");
-  }
-
-  @font-face {
-    font-family: "Inter";
-    font-weight: 700;
-    src: url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto&display=swap");
-  }
-}
-
 body {
   background-color: #262633;
 }
