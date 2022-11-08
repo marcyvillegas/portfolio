@@ -43,21 +43,24 @@ function App() {
 
             <AnimatePresence>
               {activeMenuIcon &&
-                <motion.ul className="absolute px-2 p-4 bg-[#3B3B48] text-white right-0 rounded-md object-center"
+                <motion.ul className="absolute px-2 p-4 bg-[#3B3B48] text-white right-0 rounded-md object-center z-10"
                   initial={{ opacity: 0, scale: 0.7 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.4, transition: { duration: 0.2 } }}>
 
-                  <motion.li className="hover:bg-[#5B5B60] duration-300 cursor-pointer py-1 px-6 rounded-md font-bold"
-                    whileTap={{ scale: 0.9 }}>Home
+                  <motion.li className="hover:bg-[#5B5B60] duration-300 cursor-pointer py-1 px-6 rounded-md font-bold font-inter"
+                    whileTap={{ scale: 0.9 }}
+                    onClick={() => changeActiveTab("home")}>Home
                   </motion.li>
 
-                  <motion.li className="hover:bg-[#5B5B60] duration-300 cursor-pointer py-1 px-6 rounded-md font-bold"
-                    whileTap={{ scale: 0.9 }}>Projects
+                  <motion.li className="hover:bg-[#5B5B60] duration-300 cursor-pointer py-1 px-6 rounded-md font-bold font-inter"
+                    whileTap={{ scale: 0.9 }}
+                    onClick={() => changeActiveTab("projects")}>Projects
                   </motion.li>
 
-                  <motion.li className="hover:bg-[#5B5B60] duration-300 cursor-pointer py-1 px-6 rounded-md font-bold"
-                    whileTap={{ scale: 0.9 }}>Contacts
+                  <motion.li className="hover:bg-[#5B5B60] duration-300 cursor-pointer py-1 px-6 rounded-md font-bold font-inter"
+                    whileTap={{ scale: 0.9 }}
+                    onClick={() => changeActiveTab("contacts")}>Contacts
                   </motion.li>
                 </motion.ul>}
             </AnimatePresence>
@@ -87,7 +90,16 @@ function App() {
 
       {/* layouts here */}
       <div className="flex justify-center mt-1 lg:mt-10">
-        <Home />
+        <AnimatePresence>
+          {activeTabs.home && (
+            <div className="overflow-hidden">
+              <motion.div
+                exit={{ y: 900, transition: { duration: 0.5 } }}>
+                <Home />
+              </motion.div>
+            </div>
+          )}
+        </AnimatePresence>
       </div>
 
     </div>
