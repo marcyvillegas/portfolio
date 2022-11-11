@@ -1,12 +1,18 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate, useLocation } from "react-router-dom";
+import { atom, useAtom } from "jotai"
+
+// ATOM
+export const navigationAtom = atom("home");
 
 function NavBar() {
 
     // VARIABLE
     const navigate = useNavigate();
-    const location = useLocation();
+
+    // ATOM
+    const [activeNavigation, setActiveNavigation] = useAtom(navigationAtom);
 
     // STATES
     const [activeTabs, setActiveTabs] = useState({
@@ -27,11 +33,24 @@ function NavBar() {
             [tab]: true
         });
 
-        // redirects the user to different route
-        if (tab == "home") navigate("/");
-        if (tab == "projects") navigate("/projects");
-        if (tab == "contacts") navigate("/contacts");
+        // updated the atom
+        setActiveNavigation(false);
     }
+
+    useEffect(() => {
+
+        const timer = setTimeout(() => {
+
+            setActiveNavigation(true);
+
+            if (activeTabs.home) navigate("/")
+            if (activeTabs.projects) navigate("/projects")
+            if (activeTabs.contacts) navigate("/contacts")
+        }, 1000);
+
+        return () => clearTimeout(timer);
+
+    }, [activeTabs]);
 
     return (
         <>

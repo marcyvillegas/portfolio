@@ -7,9 +7,6 @@ function Home() {
 
     // STATE
     const [buttonText, setButtonText] = useState(false);
-    const [display, setDisplay] = useState(false);
-
-    console.log(display)
 
     // FUNCTION
     const copyText = () => {

@@ -1,36 +1,23 @@
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion, useAnimation } from 'framer-motion';
 import { useLocation } from "react-router-dom";
-import { useEffect, useState } from 'react'
+import { useAtom } from 'jotai';
+import { navigationAtom } from "../pages/NavBar"
+import { useState, useEffect } from 'react';
+
 
 function AnimatedPage({ children }) {
 
-    const location = useLocation()
-
-    const [show, setShow] = useState(true)
-
-    useEffect(() => {
-
-        if (location.pathname === "/") {
-
-            setTimeout(() => {
-
-                setShow(false)
-            }, 2000)
-        }
-
-    }, []);
-
+    // ATOM
+    const [activeNavigation] = useAtom(navigationAtom);
 
     return (
         <AnimatePresence>
-            {
-                show &&
+            {activeNavigation &&
                 <motion.div className="overflow-hidden flex justify-center mt-1 lg:mt-10"
-                    exit={{ opacity: 0, x: 100, scale: 10, transition: { delay: 5 } }}>
+                    exit={{ y: 500, transition: { duration: 0.6, delay: 0.2 }}}>
 
                     {children}
-                </motion.div>
-            }
+                </motion.div>}
         </AnimatePresence>
     )
 }
