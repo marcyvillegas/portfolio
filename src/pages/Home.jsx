@@ -39,7 +39,7 @@ function Home() {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{
                             duration: 0.7,
-                            delay: 0.4,
+                            delay: 0.2,
                             ease: [0, 0.71, 0.2, 1.01]
                         }}></motion.img>
 
@@ -51,7 +51,7 @@ function Home() {
                                 animate={{ x: 0 }}
                                 transition={{
                                     duration: 0.7,
-                                    delay: 0.7,
+                                    delay: 0.4,
                                     ease: [0, 0.71, 0.2, 1.01]
                                 }}>
                                 <Header>Marcy Claire Villegas</Header>
@@ -64,7 +64,7 @@ function Home() {
                                 animate={{ x: 0 }}
                                 transition={{
                                     duration: 0.7,
-                                    delay: 0.9,
+                                    delay: 0.6,
                                     ease: [0, 0.71, 0.2, 1.01]
                                 }}>
                                 <p className="text-base sm:text-xl lg:text-2xl font-bold text-white text-center lg:text-left">I am a <span className="text-[#FFD500]">front-end developer</span> based in  Batangas, Phillipines. I have also developed fullstack web apps using MERN.</p>
@@ -77,7 +77,7 @@ function Home() {
                                 animate={{ x: 0 }}
                                 transition={{
                                     duration: 0.7,
-                                    delay: 1.1,
+                                    delay: 0.8,
                                     ease: [0, 0.71, 0.2, 1.01]
                                 }}>
                                 <p className="text-base sm:text-xl lg:text-2xl font-bold text-white text-center lg:text-left">I am passionate about responsive web design and UX. I also love creating music and learning about web game development.</p>
@@ -91,7 +91,7 @@ function Home() {
                                 animate={{ y: 0 }}
                                 transition={{
                                     duration: 0.7,
-                                    delay: 1.3,
+                                    delay: 1,
                                     ease: [0, 0.71, 0.2, 1.01]
                                 }}>
                                 <motion.button className="bg-[#5C0099] w-52 mr-4 p-3 rounded-md text-white font-bold"
@@ -104,7 +104,7 @@ function Home() {
                                 animate={{ y: 0 }}
                                 transition={{
                                     duration: 0.7,
-                                    delay: 1.5,
+                                    delay: 1.2,
                                     ease: [0, 0.71, 0.2, 1.01]
                                 }}>
                                 <motion.button className="outline outline-white outline-1 p-3 rounded-md text-white font-bold"

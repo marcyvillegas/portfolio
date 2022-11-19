@@ -35,14 +35,18 @@ function NavBar() {
 
         // updated the atom
         setActiveNavigation(false);
+
+        // close menu box
+        setActiveMenuIcon(false)
     }
 
     useEffect(() => {
 
         const timer = setTimeout(() => {
 
-            setActiveNavigation(true);
+            setActiveNavigation(true); // update the atom
 
+            // redirect
             if (activeTabs.home) navigate("/")
             if (activeTabs.projects) navigate("/projects")
             if (activeTabs.contacts) navigate("/contacts")
