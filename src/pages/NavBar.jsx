@@ -1,10 +1,19 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useNavigate, useLocation } from "react-router-dom";
-import { atom, useAtom } from "jotai"
+import { useNavigate } from "react-router-dom";
+import { useAtom } from 'jotai';
+import { atomWithStorage, createJSONStorage } from 'jotai/utils';
 
 // ATOM
-export const navigationAtom = atom("home");
+const storage = createJSONStorage(() => sessionStorage)
+
+export const navigationAtom = atomWithStorage("activePage", true, storage);
+
+const activeTab = atomWithStorage("tabs", {
+    home: true,
+    projects: false,
+    contacts: false
+}, storage);
 
 function NavBar() {
 
@@ -15,17 +24,15 @@ function NavBar() {
     const [activeNavigation, setActiveNavigation] = useAtom(navigationAtom);
 
     // STATES
-    const [activeTabs, setActiveTabs] = useState({
-        home: true,
-        projects: false,
-        contacts: false
-    });
+    const [activeTabs, setActiveTabs] = useAtom(activeTab);
     const [activeMenuIcon, setActiveMenuIcon] = useState(false);
 
     // FUNCTIONS
     const changeActiveTab = (tab) => {
 
         if (tab == "home" && activeTabs.home) return
+        if (tab == "projects" && activeTabs.projects) return
+        if (tab == "contacts" && activeTabs.contacts) return
 
         // changes the color of the tabs
         setActiveTabs({

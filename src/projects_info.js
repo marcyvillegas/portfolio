@@ -3,9 +3,9 @@ const projects = [
         id: 1,
         img: "src/assets/projects/panline-inventory-system.png",
         name: "Inventory Management System for Panlin Merchandising",
-        description: "A requirement for our our back-end programming subject course. I constructed the ERD, helped in creating the REST API and developed the front-end of the project.",
+        description: "A group project requirement for our back-end programming subject course. I constructed the ERD, helped in creating the REST API and developed the front-end of the project.",
         tech_stack: "HTML, Bootstrap, Vanilla Javascript, Express, MongoDB",
-        video_demo: "dsf"
+        video_demo: "https://www.linkedin.com/posts/marcyvillegas_frontenddeveloper-javascript-inventorymanagementsystem-activity-6905015091457081344-KVoh?utm_source=share&utm_medium=member_desktop"
     },
     {
         id: 2,
