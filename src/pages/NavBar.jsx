@@ -22,9 +22,9 @@ function NavBar() {
 
     // ATOM
     const [activeNavigation, setActiveNavigation] = useAtom(navigationAtom);
-
-    // STATES
     const [activeTabs, setActiveTabs] = useAtom(activeTab);
+
+    // STATE
     const [activeMenuIcon, setActiveMenuIcon] = useState(false);
 
     // FUNCTIONS

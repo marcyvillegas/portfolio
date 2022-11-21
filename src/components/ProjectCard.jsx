@@ -15,7 +15,7 @@ function ProjectCard({ data }) {
             <img src={data.img} className="w-3/5 lg:w-2/4" />
 
             <div className="break-words px-5 text-center lg:text-start">
-                <h2 className="text-2xl lg:text-3xl font-bold mb-4 underline decoration-[#8E2CCE] decoration-4 lg:text-left">{data.name}</h2>
+                <h1 className="text-2xl lg:text-3xl font-bold mb-4 underline decoration-[#8E2CCE] decoration-4 lg:text-left">{data.name}</h1>
                 <p className="mb-3 px-10 lg:px-0">{data.description}</p>
                 <p className="mb-3"><span>Tech stack: </span>
                     <span>{data.tech_stack}</span>
