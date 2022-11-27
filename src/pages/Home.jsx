@@ -67,7 +67,7 @@ function Home() {
                                     delay: 0.6,
                                     ease: [0, 0.71, 0.2, 1.01]
                                 }}>
-                                <p className="text-base sm:text-xl lg:text-2xl font-bold text-white text-center lg:text-left">I am a <span className="text-[#FFD500]">front-end developer</span> based in  Batangas, Phillipines. I have also developed fullstack web apps using MERN.</p>
+                                <p className="text-base sm:text-xl lg:text-2xl font-bold text-white text-center lg:text-left">I am a <span className="text-[#FFD500]">front-end developer</span> based in  Batangas, Phillipines. I am currently studying more about MERN stack and NextJS.</p>
                             </motion.div>
                         </div>
 
