@@ -73,7 +73,7 @@ function NavBar() {
                         className="bg-[#3B3B48] p-2 rounded-md"
                         whileTap={{ scale: 0.9 }}
                         onClick={() => setActiveMenuIcon(!activeMenuIcon)}>
-                        <img src="/public/menu-icon.svg" />
+                        <img src="/menu-icon.svg" />
                     </motion.button>
                 </div>
 

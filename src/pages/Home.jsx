@@ -33,7 +33,7 @@ function Home() {
             <div className="flex flex-col lg:flex-row-reverse items-center justify-center font-inter">
 
                 <>
-                    <motion.img src="/public/portrait.svg"
+                    <motion.img src="/portrait.svg"
                         className="w-72 lg:w-auto"
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
