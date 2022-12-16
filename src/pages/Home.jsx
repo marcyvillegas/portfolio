@@ -2,6 +2,7 @@ import Header from '../components/Header.jsx';
 import AnimatedPage from '../components/AnimatedPage.jsx';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 function Home() {
 
@@ -107,8 +108,13 @@ function Home() {
                                     delay: 1.2,
                                     ease: [0, 0.71, 0.2, 1.01]
                                 }}>
-                                <motion.button className="outline outline-white outline-1 p-3 rounded-md text-white font-bold"
-                                    whileTap={{ scale: 0.95 }}>Resume</motion.button>
+
+                                <Link to="/Marcy_Claire_Villegas_Resume.pdf"  target="_blank" download>
+                                    <motion.button className="outline outline-white outline-1 p-3 rounded-md text-white font-bold"
+                                        whileTap={{ scale: 0.95 }}
+                                        onClick={() => console.log}>
+                                        Resume</motion.button>
+                                </Link>
                             </motion.div>
                         </div>
                     </div>
