@@ -1,5 +1,6 @@
-import Header from '../components/Header.jsx';
-import AnimatedPage from '../components/AnimatedPage.jsx';
+import Header from '../components/Header';
+import AnimatedPage from '../components/AnimatedPage';
+import BackToTopButton from '../components/BackToTopButton';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -31,6 +32,9 @@ function Home() {
 
     return (
         <AnimatedPage>
+            
+            <BackToTopButton />
+
             <div className="flex flex-col lg:flex-row-reverse items-center justify-center font-inter">
 
                 <>

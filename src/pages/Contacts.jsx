@@ -1,5 +1,6 @@
-import AnimatedPage from '../components/AnimatedPage.jsx';
-import Header from '../components/Header.jsx';
+import AnimatedPage from '../components/AnimatedPage';
+import Header from '../components/Header';
+import BackToTopButton from '../components/BackToTopButton';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
@@ -39,6 +40,9 @@ function Contacts() {
 
     return (
         <AnimatedPage>
+
+            <BackToTopButton />
+            
             <div className="flex flex-col justify-center font-inter px-10">
 
                 <div className="overflow-hidden mb-5 lg:mb-8 w-full flex justify-center lg:justify-start">

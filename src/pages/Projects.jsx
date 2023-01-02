@@ -1,6 +1,7 @@
 import Header from '../components/Header.jsx';
-import ProjectCard from '../components/ProjectCard.jsx';
-import AnimatedPage from '../components/AnimatedPage.jsx';
+import ProjectCard from '../components/ProjectCard';
+import AnimatedPage from '../components/AnimatedPage';
+import BackToTopButton from '../components/BackToTopButton';
 import { motion } from 'framer-motion';
 import projects from '../projects_info'
 
@@ -8,6 +9,9 @@ function Projects() {
 
     return (
         <AnimatedPage>
+
+            <BackToTopButton />
+
             <div className="flex justify-center font-inter lg:px-40">
 
                 <div className="flex justify-center flex-col items-center lg:items-start">
@@ -27,9 +31,9 @@ function Projects() {
 
                     <div>
                         {projects
-                        .map(item => (
-                            <ProjectCard key={item.id} data={item} />
-                        ))}
+                            .map(item => (
+                                <ProjectCard key={item.id} data={item} />
+                            ))}
                     </div>
 
                 </div>
