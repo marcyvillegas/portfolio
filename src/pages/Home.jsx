@@ -113,10 +113,9 @@ function Home() {
                                     ease: [0, 0.71, 0.2, 1.01]
                                 }}>
 
-                                <Link to="/Marcy_Claire_Villegas_Resume.pdf"  target="_blank" download>
+                                <Link to="/Marcy_Villegas_Resume.pdf"  target="_blank">
                                     <motion.button className="outline outline-white outline-1 p-3 rounded-md text-white font-bold"
-                                        whileTap={{ scale: 0.95 }}
-                                        onClick={() => console.log}>
+                                        whileTap={{ scale: 0.95 }}>
                                         Resume</motion.button>
                                 </Link>
                             </motion.div>
