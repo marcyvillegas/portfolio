@@ -1,7 +1,7 @@
 const projects = [
     {
         id: 1,
-        img: "public/projects/digital-menu.png",
+        img: "projects/digital-menu.png",
         name: "Digital Menu and Business Card Template Web App",
         description: "A web app where in developers and food business owners can easily be updated their menu.",
         tech_stack: "Typescript, React, React Router, TailwindCSS, Vite",
@@ -10,7 +10,7 @@ const projects = [
     },
     {
         id: 2,
-        img: "public/projects/panline-inventory-system.png",
+        img: "projects/panline-inventory-system.png",
         name: "Inventory Management System for Panlin Merchandising",
         description: "A group project requirement for our back-end programming subject course. I constructed the ERD, helped in creating the REST API and developed the front-end of the project.",
         tech_stack: "HTML, Bootstrap, Vanilla Javascript, Express, MongoDB",
@@ -18,7 +18,7 @@ const projects = [
     },
     {
         id: 3,
-        img: "public/projects/random-joke-generator.png",
+        img: "projects/random-joke-generator.png",
         name: "Random Joke Generator",
         description: "A web app that creates requests to Jokes API and fetches jokes based on the picked joke theme.",
         tech_stack: "HTML, CSS, Vanilla Javascript",
@@ -27,7 +27,7 @@ const projects = [
     },
     {
         id: 4,
-        img: "public/projects/simple-to-do-list.png",
+        img: "projects/simple-to-do-list.png",
         name: "Simple To Do List",
         description: "The first web app I developed and deployed. It focuses on DOM manipulation using Vanilla Javascript. This project opened the door of excitement for me to develop more web apps and to study other technologies.",
         tech_stack: "HTML, CSS, Vanilla Javascript",
