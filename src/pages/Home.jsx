@@ -32,7 +32,7 @@ function Home() {
 
     return (
         <AnimatedPage>
-            
+
             <BackToTopButton />
 
             <div className="flex flex-col lg:flex-row-reverse items-center justify-center font-inter">
@@ -72,7 +72,7 @@ function Home() {
                                     delay: 0.6,
                                     ease: [0, 0.71, 0.2, 1.01]
                                 }}>
-                                <p className="text-base sm:text-xl lg:text-2xl font-bold text-white text-center lg:text-left">I am a <span className="text-[#FFD500]">front-end developer</span> based in  Batangas, Phillipines. I am currently studying more about MERN stack and NextJS.</p>
+                                <p className="text-base sm:text-xl lg:text-2xl font-bold text-white text-center lg:text-left">I am a <span className="text-[#FFD500]">full-stack developer</span> based in  Batangas, Phillipines. I am currently studying more about Django and PostgreSQL.</p>
                             </motion.div>
                         </div>
 
@@ -85,7 +85,7 @@ function Home() {
                                     delay: 0.8,
                                     ease: [0, 0.71, 0.2, 1.01]
                                 }}>
-                                <p className="text-base sm:text-xl lg:text-2xl font-bold text-white text-center lg:text-left">I am passionate about responsive web design and UX. I also love creating music and learning about web game development.</p>
+                                <p className="text-base sm:text-xl lg:text-2xl font-bold text-white text-center lg:text-left">I am passionate about creating responsive web and dynamic apps. I also love creating music and listening to audiobooks.</p>
                             </motion.div>
                         </div>
 
@@ -113,7 +113,7 @@ function Home() {
                                     ease: [0, 0.71, 0.2, 1.01]
                                 }}>
 
-                                <Link to="/Marcy_Villegas_Resume.pdf"  target="_blank">
+                                <Link to="/Marcy_Villegas_Resume.pdf" target="_blank">
                                     <motion.button className="outline outline-white outline-1 p-3 rounded-md text-white font-bold"
                                         whileTap={{ scale: 0.95 }}>
                                         Resume</motion.button>
