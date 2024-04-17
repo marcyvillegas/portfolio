@@ -72,7 +72,7 @@ function Home() {
                                     delay: 0.6,
                                     ease: [0, 0.71, 0.2, 1.01]
                                 }}>
-                                <p className="text-base sm:text-xl lg:text-2xl font-bold text-white text-center lg:text-left">I am a <span className="text-[#FFD500]">full-stack developer</span> based in  Batangas, Phillipines. I am currently studying more about Django and PostgreSQL.</p>
+                                <p className="text-base sm:text-xl lg:text-2xl font-bold text-white text-center lg:text-left">I am a <span className="text-[#FFD500]">software engineer</span> based in  Batangas, Phillipines. I specialize on using React and Fast API.</p>
                             </motion.div>
                         </div>
 
