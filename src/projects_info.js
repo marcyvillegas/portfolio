@@ -12,7 +12,7 @@ const projects = [
         id: 2,
         img: "projects/ilabs.png",
         name: "I-LABS: Room Reservation, Equipment Borrowing and Open Laboratory Monitoring System for UST CICS",
-        description: "A capstone project for UST CICS Laboratory Services. I took part in the development of the front-end and back-end development of the system. I developed features in the system such as real time notifications and scheduled automations.",
+        description: "A capstone project for UST CICS Laboratory Services. I took part in the development of the front-end and back-end development of the system. I developed features in the system, such as real time notifications and scheduled automations.",
         tech_stack: "NextJS, Reactstrap, Express, MongoDB, SocketIO, Node Cron"
     },
     {
