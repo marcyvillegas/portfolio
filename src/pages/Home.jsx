@@ -72,7 +72,7 @@ function Home() {
                                     delay: 0.6,
                                     ease: [0, 0.71, 0.2, 1.01]
                                 }}>
-                                <p className="text-base sm:text-xl lg:text-2xl font-bold text-white text-center lg:text-left">I am a <span className="text-[#FFD500]">software engineer</span> based in  Batangas, Phillipines. I specialize on using React and Fast API.</p>
+                                <p className="text-base sm:text-xl lg:text-2xl font-bold text-white text-center lg:text-left">I am a flexible <span className="text-[#FFD500]">software engineer</span> who builds reliable, scalable, and user-focused web applications.</p>
                             </motion.div>
                         </div>
 
@@ -85,7 +85,7 @@ function Home() {
                                     delay: 0.8,
                                     ease: [0, 0.71, 0.2, 1.01]
                                 }}>
-                                <p className="text-base sm:text-xl lg:text-2xl font-bold text-white text-center lg:text-left">I am passionate about creating responsive web and dynamic apps. I also love creating music and listening to audiobooks.</p>
+                                <p className="text-base sm:text-xl lg:text-2xl font-bold text-white text-center lg:text-left">I am passionate about creating responsive web and dynamic apps. I also love creating music and listening to audiobooks when I am not coding.</p>
                             </motion.div>
                         </div>
 
